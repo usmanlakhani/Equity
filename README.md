@@ -23,3 +23,7 @@ Development tools used:
    > npm install --save-dev prettier@3.1.0 eslint@8.54.0 eslint-plugin-react@7.33.2 eslint-config-prettier@9.0.0 eslint-plugin-jsx-a11y@6.8.0
 5. Once Prettier has a configuration file (.prettierrc.json), configure the VS Code extension for it
    - I had to download the Prettier plug in through VS Code marketplace. The ==npm install== did not work
+   - To confirm Prettier got configured properly, open the .prettierrc.json file, add space before one of the entries and press save. You should see the space removed.
+6. Eslint was configured
+7. Husky was configured
+   > npm install --save-dev husky@8.0.3 lint-staged@15.1.0
