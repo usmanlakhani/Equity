@@ -27,3 +27,21 @@ Development tools used:
 6. Eslint was configured
 7. Husky was configured
    > npm install --save-dev husky@8.0.3 lint-staged@15.1.0
+
+---
+
+# Clean up before moving onto the fun parts
+
+- Removed vite.config.js
+- Removed index.html
+- Changed the env variable in eslintrc.json to focus on node
+- Before proceeding, uninstall some plugins
+  > npm uninstall --save-dev vite @types/react @types/react-dom @vitejs/plugin-react eslint-plugin-jsx-a11y eslint-plugin-react
+- Remove **dev, preview** and **build** scripts from package.json
+
+---
+
+# Setting the MODEL in MVC
+
+- Model is the **proxy** for a database. To set up the Model, I need:
+  1.  The mongoose library (npm install mongoose@8.0.02)
