@@ -54,4 +54,12 @@ Development tools used:
   - The mongoose library (npm install mongoose@8.0.02)
 
 - Wrote the code to set up the basic connection to a MongoDB container
+
   > file name is src/db/init.js
+
+- In the image below, the following things are happening:
+  - We are creating a connection using **const connection = mongoose.connect(the url to the database)**
+  - We are then putting the connection _object_ into a variable called _connection_
+  - The _return_ statement passes this _connection object_ to who ever calls the **initDatabase()** function
+
+![initDatabase](https://github.com/usmanlakhani/Equity/blob/main/images/initDatabase.png)
