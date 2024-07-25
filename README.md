@@ -41,6 +41,12 @@ Development tools used:
 
 ---
 
+# The App Arch
+
+![App Arch](https://github.com/usmanlakhani/Equity/blob/main/images/app-arch.png)
+
+---
+
 # Setting the MODEL in MVC
 
 - Model is the **proxy** for a database. To set up the Model, I need:
