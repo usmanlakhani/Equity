@@ -47,7 +47,11 @@ Development tools used:
 
 ---
 
-# Setting the MODEL in MVC
+# Setting the MODEL in MVC (in src/db folder)
 
 - Model is the **proxy** for a database. To set up the Model, I need:
-  1.  The mongoose library (npm install mongoose@8.0.02)
+
+  - The mongoose library (npm install mongoose@8.0.02)
+
+- Wrote the code to set up the basic connection to a MongoDB container
+  > file name is src/db/init.js
