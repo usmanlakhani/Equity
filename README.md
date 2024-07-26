@@ -63,3 +63,13 @@ Development tools used:
   - The _return_ statement passes this _connection object_ to who ever calls the **initDatabase()** function
 
 ![initDatabase](https://github.com/usmanlakhani/Equity/blob/main/images/initDatabase.png)
+
+- The first MODEL we make is a SET. The MODEL will be a representation of **a** set of some exercise
+
+![Set Data Model](https://github.com/usmanlakhani/Equity/blob/main/images/Set-Model.png)
+
+- The model is declared in a PUBLIC module. We can **import** the module using _import { Set} from ./src/db/models/set.js_
+- Added lines of code to the quicktest.js file to test if the Set was being saved to the database
+- Kicked off test using **node src/quicktest.js**
+
+![Test Set Data Model](https://github.com/usmanlakhani/Equity/blob/main/images/Test_Set_Model.png)
