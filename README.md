@@ -69,7 +69,7 @@ Development tools used:
 ![Set Data Model](https://github.com/usmanlakhani/Equity/blob/main/images/Set-Model.png)
 
 - The model is declared in a PUBLIC module. We can **import** the module using
-  > _import { Set} from ./src/db/models/set.js_
+  > _import { Set } from ./src/db/models/set.js_
 - Added lines of code to the quicktest.js file to test if the Set was being saved to the database
 - Kicked off test using **node src/quicktest.js**
 
