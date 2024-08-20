@@ -22,7 +22,7 @@ Development tools used:
 4. Installed Prettify to help with stylistic linting
    > npm install --save-dev prettier@3.1.0 eslint@8.54.0 eslint-plugin-react@7.33.2 eslint-config-prettier@9.0.0 eslint-plugin-jsx-a11y@6.8.0
 5. Once Prettier has a configuration file (.prettierrc.json), configure the VS Code extension for it
-   - I had to download the Prettier plug in through VS Code marketplace. The ==npm install== did not work
+   - I had to download the Prettier plug in through VS Code marketplace. The **npm install** did not work
    - To confirm Prettier got configured properly, open the .prettierrc.json file, add space before one of the entries and press save. You should see the space removed.
 6. Eslint was configured
 7. Husky was configured
@@ -74,3 +74,29 @@ Development tools used:
 - Kicked off test using **node src/quicktest.js**
 
 ![Test Set Data Model](https://github.com/usmanlakhani/Equity/blob/main/images/Test_Set_Model.png)
+
+# Unit Testing in a very TDD-ish style w/ Jest
+
+- Jest is a JS Test Runner for unit testing JS
+- Like any other JS library, it has to be _npm'ed_
+  > npm install --save-dev jest@29.7.0
+- Another handy library is mongodb-memory-server@9.1.1. This library mimics a MongoDB database **IN MEMORY**
+  > npm install --save-dev mongodb-memory-server@9.1.1
+  - The way mongodb-memory-server works: It creates an _in-memory datase_, which becomes our MOCK.
+    - Instead of using the URL for the running container for Mongo, we will use the **in-memory database** and its URL for mocking DB connection and testing
+
+## Onto configuring the test set up using Jest
+
+- The Jest configuration has, at least, 3 steps:
+
+  - globalSetup
+  - setupFileAfterEnv
+  - globalTeardown
+
+- For our project, we will define the body of the **globalSetup, setupFileAfterEnv** and **globalTeardown**
+  - ![Jest Setup](https://github.com/usmanlakhani/Equity/blob/main/images/Jest_Configuration.png)
+  - ![Jest Config File](https://github.com/usmanlakhani/Equity/blob/main/images/Jest_Config.png)
+
+## Wiring up Test w/ Services w/ Database
+
+- Create a JS file called **src/services/post.js**
